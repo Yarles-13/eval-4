@@ -1,17 +1,11 @@
 
-
-'use client';
-import List from "./components/List";
-import Link from "next/link";
-import { useState, useEffect } from "react";
+'use client'; 
+import { useState } from 'react';
+import List from '../../components/List'; 
+import Link from 'next/link';
 
 const ContactsPage = () => {
   const [contacts, setContacts] = useState([]);
-
-  useEffect(() => {
-    const storedContacts = JSON.parse(localStorage.getItem('contacts')) || [];
-    setContacts(storedContacts);
-  }, []);
 
   return (
     <div>
@@ -25,5 +19,3 @@ const ContactsPage = () => {
 };
 
 export default ContactsPage;
-
-
