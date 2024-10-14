@@ -1,21 +1,26 @@
+'use client';
 
-'use client'; 
-import { useState } from 'react';
-import List from '../../components/List'; 
-import Link from 'next/link';
+import { useParams } from "next/navigation";
 
-const ContactsPage = () => {
-  const [contacts, setContacts] = useState([]);
+
+const ViewContact = ({ contacts }) => {
+  const { id } = useParams(); 
+
+  const contact = contacts.find(contact => contact.name === id);
+
+  if (!contact) {
+    return <p>Contact not found</p>;
+  }
 
   return (
     <div>
-      <h1>Contacts List</h1>
-      <Link href="/contacts/new">
-        <button>Add Contact</button>
-      </Link>
-      <List contacts={contacts} setContacts={setContacts} />
+      <h1>Contact Info</h1>
+      <h2>{contact.name}</h2>
+      <p>Email: {contact.email}</p>
+      <p>Phone: {contact.contactNumber}</p>
+      <img src={contact.imageURL} alt={`${contact.name}'s profile`} />
     </div>
   );
 };
 
-export default ContactsPage;
+export default ViewContact;
