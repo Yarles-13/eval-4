@@ -1,0 +1,202 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+.filter-input {
+  border: 3px solid black;
+  margin: 1rem 0 1rem 0;
+}
+main {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+}
+
+main div {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+.image {
+  width: 50px;
+  height: 100px;
+}
+.table-container {
+  width: 90%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+
+
+.table-head-content th {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 2px solid #ddd;
+}
+
+.contacts-body tr:nth-child(even) {
+  background-color: #c6d0e8;
+}
+
+.contact-row td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.contact-image .image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.box {
+
+padding: 15px;
+}
+
+
+
+
+button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+img {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+.table-wrapper {
+  margin: 20px 0;
+}
+
+.table-container {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.table-head {
+  background-color: #f4f4f4;
+}
+
+.table-heading {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+  font-weight: bold;
+}
+
+.contacts-body {
+  padding: 10px;
+}
+
+.contact-row {
+  border-bottom: 1px solid #ddd;
+}
+
+.contact-name,
+.contact-email,
+.contact-number,
+.contact-image,
+.contact-actions {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left; 
+}
+
+.contact-name,
+.contact-email,
+.contact-number {
+  width: 20%; 
+}
+
+.contact-image {
+  width: 10%; 
+  text-align: center;
+}
+
+.image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.contact-actions {
+  text-align: center;
+}
+
+.delete-button,
+.view-button {
+  padding: 5px 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.delete-button {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.view-button {
+  background-color: #3498db;
+  color: white;
+}
+.ViewContact-img{
+  width: 200px;
+  height: 200px;
+}
+
+
+button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
